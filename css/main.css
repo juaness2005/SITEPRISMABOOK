@@ -11,6 +11,7 @@
     --nav-dropdown-hover-color: #ffff;
     --nav-bg-topbar: #251197;
     --nav-color2: #ebebeb;
+    --surface: #cfcfcf;
 }
 
 body {
@@ -296,7 +297,32 @@ a {
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
-  align-items: ; /* copie do professor */
+  align-items: flex-end; 
+}
+
+.hero .container {
+background: color-mix(in srgb, var(--surface), transparent 20%);
+position: relative;
+text-align: center;
+padding-top: 30px;
+padding-bottom: 30px;
+border-top: 4px solid rgb(255, 255, 255);
+z-index: 3;
+margin-bottom: 170px;
+}
+
+@media (max-width) {
+  .hero .container {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
+
+.hero h2 {
+  margin-bottom: 20px;
+  font-size: 36px;
+  font-weight: 700;
+ /*  color: aqua;  - caso queira mudar a cor do titulo do carousel*/
 }
 
 @media (max-height:500px), 
