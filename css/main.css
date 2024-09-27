@@ -53,6 +53,16 @@ a {
     margin-right: 8px;
 }
 
+.header .cta-btn, 
+.header .cta-btn:focus {
+  color: rgb(255, 255, 255) ; /* cor da letra do botão */
+  background: var(--nav-bg-topbar); /* cor do botão */
+  font-size: 14px;
+  padding: 8px 20px;
+  margin: 0 5px 0 50px; /* para afata-lo do menu */
+  border-radius: 4px;
+}
+
 
 /* Nav menu Desktop = Responsivo */
 @media (min-width:1200px) {
@@ -324,6 +334,47 @@ margin-bottom: 170px;
   font-weight: 700;
  /*  color: aqua;  - caso queira mudar a cor do titulo do carousel*/
 }
+
+.hero .carousel-control-prev {
+  justify-content: start;
+}
+
+.hero .carousel-control-next {
+  justify-content: end;
+}
+
+.hero .carousel-control-next-icon,
+ .carousel-control-prev-icon { /* a virula é para mexer nos dois elementos ao msmo tempo */
+  background: rgb(158, 156, 156);
+  font-size: 26px;
+  color: rgb(14, 142, 216);
+  border-radius: 50px;
+  transition: .3s;
+  width: 54px;
+  height: 54px;
+  justify-content: center; /* ele centraliza verticalmente */
+  align-items: center; /* ele ctraliza horizontalmente  */
+  display: flex;
+}
+
+.hero .carousel-indicators {
+  cursor: pointer;
+  background: #444;
+  width: 12px;
+  height: 12px;
+  opacity: 1;
+  overflow: hidden;
+  border: 0;
+  border-radius: 50px;
+  transition: 0.3s;
+}
+
+.hero .carousel-indicators-active {
+  opacity: 1;
+  background: red;
+}
+
+
 
 @media (max-height:500px), 
 (max-width:500px)  {
