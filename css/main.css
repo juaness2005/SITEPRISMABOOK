@@ -6,10 +6,10 @@
     --nav-color: #444;
     --nav-hover-color: rgb(15, 175, 187);
     --nav-mobile-background: #ebebeb;
-    --nav-dropdown-background: #30098a;
+    --nav-dropdown-background: #1a1194;
     --nav-dropdown-color: #ebebeb;
     --nav-dropdown-hover-color: #ffff;
-    --nav-bg-topbar: #251197;
+    --nav-bg-topbar: #1a1194;
     --nav-color2: #ebebeb;
     --surface: #cfcfcf;
 }
@@ -353,7 +353,7 @@ margin-bottom: 170px;
   width: 54px;
   height: 54px;
   justify-content: center; /* ele centraliza verticalmente */
-  align-items: center; /* ele ctraliza horizontalmente  */
+  align-items: center; /* ele centraliza horizontalmente  */
   display: flex;
 }
 
@@ -374,6 +374,29 @@ margin-bottom: 170px;
   background: red;
 }
 
+/* featured serviços section */
+
+.featured-services .service-item {
+  background: #dfdfdf;
+  box-shadow: 0 0 25px 0  rgba(0, 0, 0, 0.1);
+  padding: 50px 30px;
+  transition: all 0.3s ease-in-out;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.featured-services .service-item .icon{
+  margin-bottom: 10px;
+}
+
+.featured-services .service-item .icon i {
+  color: #1a1194;
+  font-size: 36px;
+  transition: ease-in-out 0.3s;
+}
+
+/* fim do featured serviços section */
 
 
 @media (max-height:500px), 
