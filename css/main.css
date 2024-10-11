@@ -1,6 +1,6 @@
 /* google fontes */
 :root {
-  --defaut-font: "Roboto", sans-serif; /* fonte padrão */
+  --texto-default: "Roboto", sans-serif; /* fonte padrão */
   --heading-font: "Oswald", sans-serif ; /* ttulos */
   --nav-font: "Roboto", sans-serif; /* navegações / menu */
 }
@@ -642,6 +642,58 @@ margin-bottom: 170px;
 .stats .stats-item p {
   padding: 0;
   margin: 0;
-  font-family: var(--nav-color);
+  font-family: var(--texto-default);
   font-size: 16px;
+}
+
+/* scroll top button */
+
+.scroll-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: 15px;
+  z-index: 999999;
+  background-color: var(--accent-color);
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  transition: all 0.4s;
+}
+
+.scroll-top i {
+  font-size: 24px;
+  color: whitesmoke;
+  line-height: 0;
+}
+
+.scroll-top.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.scroll-top:hover {
+  background: #574ddf;
+}
+
+.scroll-top:hover i {
+  color: black;
+}
+
+/* factures // caracteristicas */
+
+.features .features-image {
+  position: relative;
+  min-width: 400PX;
+}
+
+.features .features-image img {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
 }
