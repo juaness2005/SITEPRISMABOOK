@@ -681,7 +681,7 @@ margin-bottom: 170px;
   color: black;
 }
 
-/* factures // caracteristicas */
+/* features // caracteristicas */
 
 .features .features-image {
   position: relative;
@@ -696,4 +696,25 @@ margin-bottom: 170px;
   height: 100%;
   object-fit: cover;
   z-index: 1;
+}
+
+.features h3 {
+  font-size: 28px; /* aumentar ou diminuir o tamanho da fonte */
+  font-weight: 700; /* expressura da fonte */
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  /* color: ; opcional
+  font-family: ; opcional */
+}
+
+.features h3::after {
+  content: "";
+  background: aqua;
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  left: 0;
+  bottom: 0;
 }
