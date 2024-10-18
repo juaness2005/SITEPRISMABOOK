@@ -821,9 +821,45 @@ margin-bottom: 170px;
 }
 
 .services .service-item:hover .icon {
-  box-shadow: 0px 0 40px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0 40px rgba(25, 0, 245, 0.397);
 }
 
 .services .service-item:hover h3 {
+  color: #000000;
+}
+
+/* consulta \\ forms */
+
+.consulta .email-form {
+  width: 100%;
+}
+
+.consulta .email-form .form-group {
+  padding-bottom: 18px;
+}
+
+.consulta .email-form input, 
+.consulta .email-form textarea,
+.consulta .email-form select {
   color: #1a1194;
+  background-color: whitesmoke;
+  border-color: color-mix(in srgb, #1a1194, transparent 80%);
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 14px;
+  padding: 10px !important;
+}
+
+
+.consulta .email-form .input::placeholder,
+.consulta .email-form .textarea::placeholder,
+.consulta .email-form select::placeholder {
+  color: color-mix(in srgb, #1a1194, transparent 50%);
+}
+
+/* quando o input for selecionado */
+.consulta .email-form input:focus,
+.consulta .email-form textarea:focus,
+.consulta .email-form select:focus {
+  border-color: #1a1194;
 }
