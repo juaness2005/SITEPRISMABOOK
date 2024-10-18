@@ -863,3 +863,27 @@ margin-bottom: 170px;
 .consulta .email-form select:focus {
   border-color: #1a1194;
 }
+
+.consulta .email-form input,
+.consulta .email-form select {
+  height: 44px;
+}
+
+.consulta .email-form textarea {
+  padding: 10px 12px;
+}
+
+.consulta .email-form button {
+  background: #1a1194;
+  color: #ebebeb;
+  border: 0;
+  padding: 10px 35px;
+  font-size: 20px;
+  transition: 0.4S;
+  border-radius: 6px;
+}
+
+.consulta .email-form button:hover {
+  background: #574ddf;
+  
+}
